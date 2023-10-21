@@ -1,9 +1,12 @@
 function my_alias
   alias mkdir='mkdir -p'
-  alias ls='yazi'
+  alias yz='yazi'
   alias cat='bat'
   alias :q='exit'
   alias :e='neovide-lunarvim'
+  alias :cat='/bin/cat'
+  alias lvi='~/.local/bin/lvim'
+  alias osu-update='~/.local/bin/osu update'
   alias th='trash'
   alias c='clear'
   alias cf='clear && fastfetch'
