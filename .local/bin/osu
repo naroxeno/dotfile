@@ -1,0 +1,10 @@
+#!/bin/bash
+cd ~/.local/bin/
+if [ $# -eq 0 ]; then
+  env LD_PRELOAD=/usr/lib/libmimalloc.so ~/.local/bin/osu.AppImage
+elif [ $1 = "update" ]; then
+  wget https://slink.ltd/https://github.com/ppy/osu/releases/latest/download/osu.AppImage -N
+  chmod a+x osu.AppImage
+else
+  echo "Unknown option: $1"
+fi

@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ~/.local/share/beatoraja/
+env LD_PRELOAD=/usr/lib/libmimalloc.so java --module-path "/home/Neokobase-Anstari/.local/share/java17-openjfx/lib/" --add-modules javafx.controls,javafx.fxml -jar -Xmx4G beatoraja.jar
+
