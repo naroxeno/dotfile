@@ -9,19 +9,16 @@ function my_alias
   alias osu-update='~/.local/bin/osu update'
   alias th='trash'
   alias c='clear'
-  alias cf='clear && fastfetch'
+  alias cf='clear && fish_greeting'
+  alias cfd='clear && fish_greeting'
   alias sudo='sudo -i'
   alias wine='env LD_PRELOAD="" wine64'
 end
 
 function fish_greeting
-  fastfetch
+  fastfetch -l arch_small
 end
 
 if status is-interactive
-  set LD_PRELOAD /usr/lib/libmimalloc.so 
-  set -x RUSTUP_UPDATE_ROOT https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup
-  set -x RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup
   my_alias
 end
-

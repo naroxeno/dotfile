@@ -4,7 +4,7 @@
     font-weight: 500;
     font-size: 16px;
 
-    border-radius: 18px;
+    border-radius: 15px;
     text-shadow: none;
     
     transition-property: background;
@@ -81,22 +81,12 @@ window#waybar.hidden {
 }
 
 #clock {
-    background-color: #eefff1;
-    color: #000000;
-}
-
-#cpu {
-    background-color: #FE968B;
-    color: #000000;
-}
-
-#memory {
-    background-color: #FFEAAA;
+    background-color: #3B4261;
     color: #000000;
 }
 
 #pulseaudio {
-    background-color: #b0f5e5;
+    background-color: #a9b1d6;
     color: #000000;
 }
 
@@ -106,7 +96,7 @@ window#waybar.hidden {
 }
 
 #tray {
-    background-color: rgba(16, 20, 24, 0.5);
+    background-color: rgba(16, 20, 24, 0.4);
 }
 
 #window {

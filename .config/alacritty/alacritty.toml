@@ -1,23 +1,26 @@
 [env]
 TERM = "xterm-256color"
+LD_PRELOAD = "/usr/lib/libmimalloc.so"
+RUSTUP_UPDATE_ROOT = "https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup"
+RUSTUP_DIST_SERVER = "https://mirrors.tuna.tsinghua.edu.cn/rustup"
 
 [font]
 size = 11.0
 
 [font.bold]
-family = "Source Code Pro"
+family = "Fira Code"
 style = "Bold"
 
 [font.bold_italic]
-family = "Source Code Pro"
+family = "Fira Code"
 style = "Bold Italic"
 
 [font.italic]
-family = "Source Code Pro"
+family = "Fira Code"
 style = "Italic"
 
 [font.normal]
-family = "Source Code Pro"
+family = "Fira Code"
 style = "Regular"
 
 [[colors.indexed_colors]]
@@ -53,7 +56,8 @@ background = "0x1a1b26"
 foreground = "0xc0caf5"
 
 [shell]
-program = "/bin/tmux"
+args = ["--login", "--command", "tmux new-session -A -D -s main"]
+program = "/usr/bin/fish"
 
 [window]
 opacity = 0.8

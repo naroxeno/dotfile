@@ -1,6 +1,7 @@
 lvim.plugins = {
   {
     'nvimdev/lspsaga.nvim',
+    event = "InsertEnter",
     config = function()
       require('lspsaga').setup({})
     end,
@@ -8,15 +9,6 @@ lvim.plugins = {
       'nvim-treesitter/nvim-treesitter',
       'nvim-tree/nvim-web-devicons'
     }
-  },
-
-  {
-    'nvimdev/dashboard-nvim',
-    event = 'VimEnter',
-    config = function()
-      require('dashboard').setup({})
-    end,
-    dependencies = { { 'nvim-tree/nvim-web-devicons' } }
   },
 
   {
@@ -33,9 +25,18 @@ lvim.plugins = {
   },
 }
 
+lvim.lazy.opts.git = {
+  log = { "-8" },
+  timeout = 150,
+  url_format = "git@github.com:%s.git",
+  filter = true,
+}
+
 if vim.g.neovide then
   vim.g.neovide_transparency = 0.85
   vim.g.neovide_hide_mouse_when_typing = true
+elseif os.getenv("SSH_CLIENT") then -- ssh client config
+  lvim.transparent_window = false
 else
   lvim.transparent_window = true
 end
