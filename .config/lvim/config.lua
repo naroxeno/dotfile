@@ -23,6 +23,7 @@ lvim.lazy.opts.git = {
 if vim.g.neovide then
   vim.g.neovide_transparency = 0.85
   vim.g.neovide_hide_mouse_when_typing = true
+  vim.o.guifont = "Source Code Pro:h12"
 elseif os.getenv("SSH_CLIENT") then
   lvim.transparent_window = false
 else
