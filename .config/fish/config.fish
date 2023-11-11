@@ -2,11 +2,8 @@ function my_alias
   alias mkdir='mkdir -p'
   alias :q='exit'
   alias :e='neovide-lunarvim'
-  alias lvi='~/.local/bin/lvim'
-  alias osu='~/.local/bin/osu'
   alias c='clear'
-  alias cf='clear && fish_greeting'
-  alias cfd='clear && fish_greeting'
+  alias ci='clear && fish_greeting && cd'
   alias wine='env LD_PRELOAD="" wine64'
   # Dangerous Command 
   alias rm='rm -i'
@@ -15,7 +12,9 @@ function my_alias
   alias gps='git push'
   alias gpl='git pull'
   alias gcm='git commit'
-  alias ga='git add .'
+  alias ga='git add'
+  # misc
+  alias cleanpkg='sudo pacman -Qtdq | sudo pacman -Rns -'
 end
 
 function dfu
@@ -28,4 +27,5 @@ end
 
 if status is-interactive
   my_alias
+  set -U fish_user_paths $fish_user_paths ~/.local/bin/
 end
