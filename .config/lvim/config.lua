@@ -1,3 +1,4 @@
+local opt = vim.opt
 lvim.plugins = {
   {
     'nvimdev/lspsaga.nvim',
@@ -9,19 +10,6 @@ lvim.plugins = {
       'nvim-treesitter/nvim-treesitter',
       'nvim-tree/nvim-web-devicons'
     }
-  },
-
-  {
-    "shellRaining/hlchunk.nvim",
-    event = { "UIEnter" },
-    config = function()
-      require("hlchunk").setup({
-        indent = {
-          chars = { "│", "¦", "┆", "┊", },
-        },
-        blank = { enable = false, }
-      })
-    end
   },
 }
 
@@ -35,7 +23,7 @@ lvim.lazy.opts.git = {
 if vim.g.neovide then
   vim.g.neovide_transparency = 0.85
   vim.g.neovide_hide_mouse_when_typing = true
-elseif os.getenv("SSH_CLIENT") then -- ssh client config
+elseif os.getenv("SSH_CLIENT") then
   lvim.transparent_window = false
 else
   lvim.transparent_window = true
@@ -43,4 +31,4 @@ end
 
 lvim.colorscheme = "tokyonight-night"
 lvim.builtin.lualine.style = "default"
-vim.wo.relativenumber = true
+opt.relativenumber = true
