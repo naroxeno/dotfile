@@ -56,8 +56,8 @@ background = "0x1a1b26"
 foreground = "0xc0caf5"
 
 [shell]
-args = ["--login", "--command", "tmux new-session -A -D -s main"]
-program = "/usr/bin/fish"
+args = ["new-session", "-A", "-D", "-s", "main"]
+program = "/usr/bin/tmux"
 
 [window]
 opacity = 0.8

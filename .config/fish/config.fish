@@ -1,5 +1,6 @@
 function my_alias
   alias mkdir='mkdir -p'
+  alias ls='lsd'
   alias :q='exit'
   alias :e='neovide-lunarvim'
   alias c='clear'
@@ -18,7 +19,7 @@ function my_alias
 end
 
 function dfu
-  yadm add -u && yadm commit -m $argv[1] && yadm push origin main 
+  yadm add -u && yadm commit -m $argv[1] && yadm push origin main
 end
 
 function fish_greeting
@@ -27,5 +28,5 @@ end
 
 if status is-interactive
   my_alias
-  set -U fish_user_paths $fish_user_paths ~/.local/bin/ 
+  set -U fish_user_paths $fish_user_paths ~/.local/bin/
 end
