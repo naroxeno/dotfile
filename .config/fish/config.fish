@@ -16,6 +16,7 @@ function my_alias
   alias ga='git add'
   # misc
   alias cleanpkg='sudo pacman -Qtdq | sudo pacman -Rns -'
+  alias mf='musicfox'
 end
 
 function dfu

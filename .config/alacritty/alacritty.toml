@@ -5,7 +5,7 @@ RUSTUP_UPDATE_ROOT = "https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup"
 RUSTUP_DIST_SERVER = "https://mirrors.tuna.tsinghua.edu.cn/rustup"
 
 [font]
-size = 11.0
+size = 11.2
 
 [font.bold]
 family = "Source Code Pro"
@@ -17,11 +17,11 @@ style = "Bold Italic"
 
 [font.italic]
 family = "Source Code Pro"
-style = "Italic"
+style = "Semibold Italic"
 
 [font.normal]
 family = "Source Code Pro"
-style = "Regular"
+style = "Medium"
 
 [[colors.indexed_colors]]
 color = "0xff9e64"
