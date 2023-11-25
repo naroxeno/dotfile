@@ -30,4 +30,5 @@ end
 if status is-interactive
   my_alias
   set -U fish_user_paths $fish_user_paths ~/.local/bin/
+  set -U LANG zh_CN.UTF-8
 end
