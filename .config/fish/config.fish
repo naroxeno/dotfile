@@ -2,7 +2,6 @@ function my_alias
   alias mkdir='mkdir -p'
   alias ls='lsd'
   alias :q='exit'
-  alias :e='neovide-lunarvim'
   alias c='clear'
   alias ci='clear && fish_greeting && cd'
   alias wine='env LD_PRELOAD="" wine64'
@@ -14,9 +13,15 @@ function my_alias
   alias gpl='git pull'
   alias gcm='git commit'
   alias ga='git add'
+  # Paru/Pacman
+  alias :i='paru -S'
+  alias :u='paru'
+  alias :r='paru -R'
+  alias :rc='paru -Rscun'
+  alias :cpkg='sudo pacman -Qtdq | sudo pacman -Rns -'
   # misc
-  alias cleanpkg='sudo pacman -Qtdq | sudo pacman -Rns -'
   alias mf='musicfox'
+  alias play='mpv ./Music/CloudMusic/Arghena-Laur,Feryquitous.mp3 --no-audio-display --volume=52'
 end
 
 function dfu
