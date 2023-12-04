@@ -1,6 +1,9 @@
 function my_alias
   alias mkdir='mkdir -p'
   alias ls='lsd'
+  alias df='duf'
+  alias top='btm'
+  alias du='dust'
   alias :q='exit'
   alias c='clear'
   alias ci='clear && fish_greeting && cd'
@@ -21,11 +24,7 @@ function my_alias
   alias :cpkg='sudo pacman -Qtdq | sudo pacman -Rns -'
   # misc
   alias mf='musicfox'
-  alias play='mpv ./Music/CloudMusic/Arghena-Laur,Feryquitous.mp3 --no-audio-display --volume=52'
-end
-
-function dfu
-  yadm add -u && yadm commit -m $argv[1] && yadm push origin main
+  alias play='mpv --no-audio-display --volume=52'
 end
 
 function fish_greeting
@@ -36,4 +35,10 @@ if status is-interactive
   my_alias
   set -U fish_user_paths $fish_user_paths ~/.local/bin/
   set -U LANG zh_CN.UTF-8
+  starship init fish | source
 end
+
+function dfu
+  yadm add -u && yadm commit -m $argv[1] && yadm push origin main
+end
+
