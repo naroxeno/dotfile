@@ -16,15 +16,10 @@ function my_alias
   alias gpl='git pull'
   alias gcm='git commit'
   alias ga='git add'
-  # Paru/Pacman
-  alias :i='paru -S'
-  alias :u='paru'
-  alias :r='paru -R'
-  alias :rc='paru -Rscun'
-  alias :cpkg='sudo pacman -Qtdq | sudo pacman -Rns -'
   # misc
+  alias :cpkg='sudo pacman -Qtdq | sudo pacman -Rns -'
   alias mf='musicfox'
-  alias play='mpv --no-audio-display --volume=52'
+  alias play='mpv --no-audio-display --volume=50'
 end
 
 function fish_greeting
@@ -33,8 +28,7 @@ end
 
 if status is-interactive
   my_alias
-  set -U fish_user_paths $fish_user_paths ~/.local/bin/
-  set -U LANG zh_CN.UTF-8
+  fish_add_path ~/.local/bin/
   starship init fish | source
 end
 

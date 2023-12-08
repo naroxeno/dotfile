@@ -8,19 +8,19 @@ RUSTUP_DIST_SERVER = "https://mirrors.tuna.tsinghua.edu.cn/rustup"
 size = 11.2
 
 [font.bold]
-family = "Source Code Pro"
+family = "Fira Code"
 style = "Bold"
 
 [font.bold_italic]
-family = "Source Code Pro"
+family = "Fira Code"
 style = "Bold Italic"
 
 [font.italic]
-family = "Source Code Pro"
+family = "Fira Code"
 style = "Semibold Italic"
 
 [font.normal]
-family = "Source Code Pro"
+family = "Fira Code"
 style = "Medium"
 
 [[colors.indexed_colors]]
