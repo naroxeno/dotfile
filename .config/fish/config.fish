@@ -11,6 +11,7 @@ function my_alias
   # Dangerous Command 
   alias rm='rm -i'
   alias sudo='sudo -i'
+  alias ds='doas'
   # Git
   alias gps='git push'
   alias gpl='git pull'
