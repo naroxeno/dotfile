@@ -21,6 +21,7 @@ function my_alias
   alias :cpkg='sudo pacman -Qtdq | sudo pacman -Rns -'
   alias mf='musicfox'
   alias play='mpv --no-audio-display --volume=50'
+  alias watchgpu='watch -n 0.3 nvidia-smi'
 end
 
 function fish_greeting
@@ -30,7 +31,6 @@ end
 if status is-interactive
   my_alias
   fish_add_path ~/.local/bin/
-  starship init fish | source
 end
 
 function dfu

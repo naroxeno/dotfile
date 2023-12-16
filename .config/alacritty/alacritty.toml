@@ -61,3 +61,7 @@ program = "/usr/bin/tmux"
 
 [window]
 opacity = 0.8
+title="Terminal"
+
+[mouse]
+hide_when_typing = true

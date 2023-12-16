@@ -3,6 +3,7 @@ theme = "tokyonight"
 [editor]
 line-number = "relative"
 bufferline = "multiple"
+cursorcolumn = true
 
 [editor.cursor-shape]
 insert = "bar"
