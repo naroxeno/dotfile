@@ -1,4 +1,4 @@
 #!/bin/sh
 tmux set status off
-helix "$@"
+helix $@
 tmux set status on
