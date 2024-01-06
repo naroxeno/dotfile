@@ -4,6 +4,7 @@ function my_alias
   alias df='duf'
   alias top='btm'
   alias du='dust'
+  alias rs='rsync'
   alias :q='exit'
   alias c='clear'
   alias ci='clear && fish_greeting && cd'
