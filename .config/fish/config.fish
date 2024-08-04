@@ -35,3 +35,5 @@ end
 fish_add_path /opt/usrprogs/bin/ ~/.local/bin/
 
 set -x LANG zh_CN.UTF-8
+set -x RUSTUP_UPDATE_ROOT https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup
+set -x RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup
