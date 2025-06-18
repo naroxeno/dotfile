@@ -1,0 +1,7 @@
+[language-server.ghostty-ls]
+command = "ghostty-ls"
+
+[[language]]
+name = "ghostty"
+language-servers = [ "ghostty-ls" ]
+

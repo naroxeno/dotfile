@@ -1,0 +1,13 @@
+font-family = "FiraCode Nerd Font Mono"
+font-family-italic = "Source Code Pro"
+font-style = Medium
+window-decoration = false
+window-theme = system
+gtk-wide-tabs = false
+gtk-tabs-location = bottom
+font-size = 12
+background-opacity = 0.8
+theme = "tokyonight"
+shell-integration = fish
+keybind = ctrl+shift+enter=new_split:auto
+gtk-single-instance = true
